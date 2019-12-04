@@ -56,6 +56,7 @@ int main ()
 {
   std::thread threads[10];
   // spawn 10 threads:
+  std::cout << "My modification - Krystian";
   for (int i=0; i<10; ++i)
     threads[i] = std::thread(print_id,i);
 
